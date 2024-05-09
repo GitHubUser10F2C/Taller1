@@ -26,8 +26,17 @@ public abstract class Carta {
         this.descripcion = descripcion;
     }
 
+    /**
+     * método que genera una cadena de texo a ser impreso por consola, que muestra todos los atributos de la carta
+     * @return la cadena de texto
+     */
     public abstract String aStringDetallado();
 
+    /**
+     * método que genera una cadena de texto a ser impreso por consola, que representa a la carta, muestra su nombre y
+     * descripción
+     * @return la cadena de texto
+     */
     public String aStringSimple(){
         int largoNombre = nombre.length();
         int largoDescripcion = descripcion.length();
@@ -62,8 +71,17 @@ public abstract class Carta {
         return retorno;
     }
 
+    /**
+     * método que genera una cadena de texto a ser almacenada en un archivo de salida, con toda la información de
+     * la carta
+     * @return la cadena de texto
+     */
     public abstract String aStringArchivoSalida();
 
+    /**
+     * obtiene el código de color correspondiente a la presencia de la carta
+     * @return el código de color de la carta, que permite imprimir dicha carta a color desde consola
+     */
     private String getCodigo(){
         return presenciasCodigo.get(presencias.indexOf(presencia));
     }

@@ -1,0 +1,1 @@
+Destreza,Asfixia,3,agua,Esta es una descripción sobre la carta 'Asfixia',10,físico
